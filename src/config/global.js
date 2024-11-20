@@ -1,8 +1,10 @@
 export default {
   global: {
-    componenteFormativo: 'NOMBRE DEL COMPONENTE FORMATIVO',
-    descripcionCurso: 'BREVE DESCRIPCIÓN',
-    imagenBannerPrincipal: require('@/assets/curso/portada/banner-princiapal.svg'),
+    componenteFormativo:
+      'Exploración, validación y visualización de datos para la toma de decisiones',
+    descripcionCurso:
+      'Este componente aborda los fundamentos y técnicas del análisis exploratorio y la visualización de datos, enfocado en la toma de decisiones efectiva. Examina métodos estadísticos y técnicas de visualización avanzada y principios de comunicación de datos, integrando aspectos teóricos con aplicaciones prácticas mediante herramientas modernas. Diseñado para desarrollar competencias en la exploración sistemática y su traducción en insights accionables.',
+    imagenBannerPrincipal: require('@/assets/curso/portada/banner-princiapal.png'),
     fondoBannerPrincipal: require('@/assets/curso/portada/fondo-banner-principal.png'),
     imagenesDecorativasBanner: [
       {
