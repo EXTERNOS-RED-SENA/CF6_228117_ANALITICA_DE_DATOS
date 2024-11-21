@@ -6,12 +6,13 @@
       .titulo-principal__numero
         span 1
       h1 Fundamentos del análisis exploratorio de datos
-    .bloque-texto-g.color-secundario.p-3.p-sm-4.p-md-5
-      .bloque-texto-g__img(
-        :style="{'background-image':`url(${require('@/assets/curso/temas/3.png')})`}"
-      )
-      .bloque-texto-g__texto.p-4
-        p.mb-0 La preparación y limpieza de datos constituye una fase decisiva y fundamental en cualquier proceso de análisis exploratorio de datos. En este capítulo se introducen los conceptos esenciales relacionados con la exploración de datos, comenzando desde la comprensión de los procesos de limpieza y transformación, pasando por su importancia crítica en la toma de decisiones basadas en datos, hasta llegar a los aspectos técnicos relacionados con la preparación del entorno de programación y el uso de bibliotecas especializadas. La comprensión de estos conceptos fundamentales, junto con el dominio de las herramientas y técnicas programáticas asociadas, resulta esencial para desarrollar procesos de análisis exploratorio, efectivos y confiables, que puedan traducirse en insights accionables para la toma de decisiones empresariales.
+    .v2
+      .bloque-texto-g.color-secundario.p-3.p-sm-4.p-md-5
+        .bloque-texto-g__img(
+          :style="{'background-image':`url(${require('@/assets/curso/temas/3.png')})`}"
+        )
+        .bloque-texto-g__texto.p-4
+          p.mb-0 La preparación y limpieza de datos constituye una fase decisiva y fundamental en cualquier proceso de análisis exploratorio de datos. En este capítulo se introducen los conceptos esenciales relacionados con la exploración de datos, comenzando desde la comprensión de los procesos de limpieza y transformación, pasando por su importancia crítica en la toma de decisiones basadas en datos, hasta llegar a los aspectos técnicos relacionados con la preparación del entorno de programación y el uso de bibliotecas especializadas. La comprensión de estos conceptos fundamentales, junto con el dominio de las herramientas y técnicas programáticas asociadas, resulta esencial para desarrollar procesos de análisis exploratorio, efectivos y confiables, que puedan traducirse en insights accionables para la toma de decisiones empresariales.
     Separador
     #t_1_1.titulo-segundo.color-acento-contenido(data-aos='fade-right')
       h2 1.1	Introducción a la limpieza y transformación de datos
@@ -152,7 +153,119 @@
           div(titulo="Resumen")
             p.mb-0 La calidad de los datos no solo respalda decisiones más precisas, sino que también protege a las empresas de riesgos asociados con errores y malas interpretaciones. Procesos robustos de validación y control son esenciales para garantizar que los datos se conviertan en un activo estratégico que impulse el crecimiento, la innovación y la confianza de todas las partes interesadas.
     Separador
-
+    #t_1_3.titulo-segundo.color-acento-contenido(data-aos='fade-right')
+      h2 1.3	Preparación del entorno de programación
+    .row.justify-content-center.align-items-center.mb-5
+      .col-lg-7.mb-lg-0.mb-3
+        p.mb-0 La configuración adecuada del entorno de programación constituye un paso fundamental para el análisis efectivo de datos, puesto que establece la infraestructura técnica necesaria para manejar proyectos analíticos de manera eficiente. El entorno moderno de análisis de datos requiere una combinación, cuidadosamente seleccionada, de herramientas, bibliotecas y configuraciones que permitan tanto el procesamiento eficiente como la reproducibilidad de los análisis.
+      .col-lg-5.col-7: img(src='@/assets/curso/temas/19.png', alt='')
+    .tarjeta.p-4.mb-4(style="background-color: #f3f0ea")
+      p.fw-bold Los componentes esenciales de un entorno de análisis de datos incluyen:
+      .row.justify-content-center.px-4
+        .col-lg-4.mb-lg-0.mb-3
+          .tarjeta.p-4(style="background-color: #e2dacc ").h-100
+            p.mb-0 #[b Distribuciones especializadas:] plataformas como Anaconda para Python o RStudio para R, que proporcionan un ecosistema integrado de herramientas y bibliotecas preconfiguradas, facilitando la gestión de dependencias y la consistencia entre diferentes entornos de desarrollo.
+        .col-lg-4.mb-lg-0.mb-3
+          .tarjeta.p-4(style="background-color: #e2dacc ").h-100
+            p.mb-0 #[b Entornos virtuales:] herramientas como conda, venv o virtualenv, que permiten el aislamiento de proyectos y la gestión independiente de dependencias, y evita conflictos entre diferentes proyectos y asegurando la reproducibilidad.
+        .col-lg-4.mb-lg-0.mb-3
+          .tarjeta.p-4(style="background-color: #e2dacc ").h-100
+            p.mb-2 #[b Control de versiones:] sistemas como Git, esenciales para el seguimiento de cambios en código y documentación, que facilitan la colaboración y el mantenimiento de versiones estables del análisis.
+    p.mb-5(data-aos='fade-right') La gestión efectiva de recursos computacionales desempeña un papel destacado en el análisis de datos moderno. Esto incluye la configuración apropiada de memoria, capacidad de procesamiento y almacenamiento, considerando siempre los requerimientos específicos del proyecto en cuestión. Por ejemplo, el análisis de grandes conjuntos de datos puede requerir configuraciones especiales de memoria o la implementación de técnicas de procesamiento por lotes.
+      br
+      br
+      |La integración con servicios en la nube ha transformado significativamente los entornos de análisis de datos. Plataformas como Google Colab, Azure Notebooks o Amazon SageMaker proporcionan entornos preconfigurados con acceso a recursos computacionales escalables, lo cual facilita la colaboración y el despliegue de soluciones analíticas. Estas plataformas permiten la transición fluida entre desarrollo local y computación en la nube.
+    .titulo-tres.mb-4: h3.mb-0 Los cinco problemas más frecuentes en la preparación de entornos de programación y sus soluciones
+    TabsC.color-acento-contenido.mb-5
+      .py-4.py-md-5(titulo="Infraestructura obsoleta: un lastre para la innovación")
+        .row.justify-content-center
+          .col-lg-5.mb-4.mb-md-0: img(src='@/assets/curso/temas/20.png', alt='')
+            
+          .col-lg-6
+            h4 Infraestructura obsoleta: un lastre para la innovación
+            p.mb-4 Muchas empresas, especialmente aquellas con estructuras tradicionales, operan con sistemas y equipos desactualizados que no soportan las demandas modernas de análisis de datos y programación. Esto incluye hardware con capacidad de procesamiento limitada y sistemas operativos incompatibles con las versiones actuales de herramientas y lenguajes de programación. Este problema afecta directamente la productividad y la competitividad en sectores como la manufactura y la banca, donde los retrasos en los análisis pueden traducirse en pérdidas financieras.
+            h5 Solución
+            p.mb-0 Actualizar el #[em hardware] y #[em software] esenciales debe ser una prioridad estratégica. Las empresas pueden implementar planes de renovación tecnológica escalonados y optar por soluciones en la nube que ofrecen recursos computacionales robustos sin una inversión inicial significativa. Plataformas como Microsoft Azure y Amazon Web Services permiten el acceso a infraestructura de última generación con escalabilidad garantizada.
+      .py-4.py-md-5(titulo="Conflictos entre dependencias: una trampa técnica frecuente")
+        .row.justify-content-center
+          .col-lg-5.mb-4.mb-md-0: img(src='@/assets/curso/temas/21.png', alt='')
+            
+          .col-lg-6
+            h4 Conflictos entre dependencias: una trampa técnica frecuente
+            p.mb-4 La ejecución de múltiples proyectos en un mismo entorno puede generar conflictos entre versiones de bibliotecas y frameworks. Estos problemas suelen surgir al intentar integrar herramientas incompatibles o al actualizar software crítico sin considerar la dependencia de otros sistemas. En el ámbito financiero, por ejemplo, esto puede llevar a errores en los modelos de predicción que dependen de cálculos precisos y consistentes.
+            h5 Solución
+            p.mb-0 Implementar entornos virtuales con herramientas como venv o conda es crucial. Estas herramientas permiten aislar cada proyecto, evitando conflictos de dependencias. Además, se recomienda estandarizar los entornos mediante archivos de configuración, como #[em #[b requirements.txt]] o #[em #[b environment.yml]], para garantizar la replicabilidad y facilitar la colaboración.
+      .py-4.py-md-5(titulo="Falta de control en proyectos colaborativos: un riesgo para la productividad")
+        .row.justify-content-center
+          .col-lg-5.mb-4.mb-md-0: img(src='@/assets/curso/temas/22.png', alt='')
+            
+          .col-lg-6
+            h4 Falta de control en proyectos colaborativos: un riesgo para la productividad
+            p.mb-5 En equipos multidisciplinarios que trabajan simultáneamente en un proyecto, la ausencia de sistemas de control de versiones provoca duplicidad de esfuerzos, sobreescritura de código y pérdida de tiempo. Esto resulta particularmente problemático en industrias como la farmacéutica o la ingeniería, donde los errores en la gestión de proyectos pueden tener consecuencias graves.
+            h5 Solución
+            p.mb-0 Adoptar sistemas de control de versiones como #[b Git] junto con plataformas de colaboración como #[b GitHub] o #[b GitLab] es esencial. Estas herramientas permiten un seguimiento detallado de los cambios, además de facilitar la integración continua (CI/CD). Las empresas deben capacitar a sus equipos en el uso de estas herramientas y establecer políticas claras para el manejo de ramas y revisiones de código.
+      .py-4.py-md-5(titulo="Limitaciones en el manejo de datos masivos: el cuello de botella de los proyectos analíticos")
+        .row.justify-content-center
+          .col-lg-5.mb-4.mb-md-0: img(src='@/assets/curso/temas/23.png', alt='')
+            
+          .col-lg-6
+            h4 Limitaciones en el manejo de datos masivos: el cuello de botella de los proyectos analíticos
+            p.mb-5 Con la explosión de datos en sectores como el comercio electrónico y la logística, muchas empresas enfrentan desafíos al intentar procesar grandes volúmenes de información en entornos locales. La falta de recursos adecuados provoca análisis lentos y decisiones retrasadas, lo que afecta directamente la eficiencia operativa.
+            h5 Solución
+            p.mb-0 Migrar hacia arquitecturas de datos distribuidas, como Apache Hadoop o Apache Spark, es una solución efectiva. Estas plataformas permiten manejar grandes volúmenes de datos de manera paralela, optimizando tiempos y recursos. Además, las empresas pueden recurrir a servicios en la nube especializados en análisis de datos masivos, como Google BigQuery, para reducir la dependencia de recursos locales.
+      .py-4.py-md-5(titulo="Ausencia de escalabilidad y flexibilidad: un obstáculo para la adaptación tecnológica")
+        .row.justify-content-center
+          .col-lg-5.mb-4.mb-md-0: img(src='@/assets/curso/temas/24.png', alt='')
+            
+          .col-lg-6
+            h5 Ausencia de escalabilidad y flexibilidad: un obstáculo para la adaptación tecnológica
+            p.mb-5 Las empresas que no adoptan soluciones escalables enfrentan dificultades para adaptarse a las crecientes demandas de los proyectos o integrar nuevas tecnologías. Esto limita la capacidad de responder a cambios del mercado o a necesidades específicas, como la implementación de modelos avanzados de inteligencia artificial.
+            h5 Solución
+            p.mb-0 Integrar soluciones basadas en la nube, como AWS SageMaker o Google Cloud AI, que ofrecen flexibilidad y escalabilidad, resulta esencial. Estas plataformas permiten escalar recursos según la necesidad del proyecto, además de proporcionar herramientas especializadas para tareas avanzadas como el entrenamiento de modelos de #[em machine learning]. Para garantizar una transición fluida, las empresas deben diseñar estrategias híbridas que combinen el desarrollo local con capacidades en la nube.
+    p.mb-5(data-aos='fade-right') Preparar un entorno de programación efectivo no es solo una cuestión técnica, sino una inversión estratégica para las empresas. Los problemas más frecuentes, como los conflictos de dependencias o la falta de escalabilidad, pueden resolverse mediante soluciones tecnológicas específicas y la capacitación del personal. Al implementar estas estrategias, las organizaciones no solo optimizan sus procesos, sino que también se posicionan como líderes innovadores en un mercado altamente competitivo.
+    Separador
+    #t_1_4.titulo-segundo.color-acento-contenido(data-aos='fade-right')
+      h2 1.4	Bibliotecas especializadas para análisis de datos 
+    .row.justify-content-center.mb-5
+      .col-lg-7.mb-lg-0.mb-3
+        .p-4(style="background-color: #e2f4f9 ")
+          p Las bibliotecas especializadas constituyen el núcleo funcional del análisis moderno de datos, proporcionando herramientas optimizadas para cada fase del proceso analítico. La selección y dominio de estas bibliotecas resulta muy importante para desarrollar análisis eficientes y robustos.
+            br
+            br
+            |El ecosistema de bibliotecas para análisis de datos puede organizarse en categorías funcionales principales:
+          ul.lista-ul--color
+            li.d-flex
+              i.fas.fa-check
+              p.mb-0 #[b Manipulación y procesamiento fundamental:] incluye bibliotecas base como Pandas para estructuras de datos tabulares, que permiten operaciones eficientes de filtrado, agregación y transformación. NumPy proporciona el fundamento para computación numérica, mientras que Polars reluce como una alternativa moderna optimizada para rendimiento en grandes conjuntos de datos.
+            li.d-flex
+              i.fas.fa-check
+              p.mb-0 #[b Visualización y exploración:] comprende desde bibliotecas básicas como Matplotlib hasta frameworks más especializados como Seaborn para visualización estadística, plotly para gráficos interactivos, y Altair para visualizaciones declarativas. Cada biblioteca ofrece ventajas específicas para diferentes contextos de visualización.
+            li.d-flex
+              i.fas.fa-check
+              p.mb-0 #[b Análisis estadístico y modelado:] agrupa bibliotecas como Statsmodels para análisis estadístico tradicional, Scikit-learn para machine learning, y Scipy para computación científica avanzada, que en su conjunto proporcionan implementaciones optimizadas de algoritmos estadísticos y técnicas de modelado.
+      .col-lg-5.col-7: img(src='@/assets/curso/temas/25.png', alt='')
+    .row.justify-content-center.mb-5
+      .col-lg-4.col-7.mb-lg-0.mb-3: img(src='@/assets/curso/temas/26.png', alt='')
+      .col-lg-8
+        .row.justify-content-center.align-items-center.mb-4
+          .col-1.d.lg-block.d-none: img(src='@/assets/curso/temas/27.svg', alt='')
+          .col-lg-11
+            p.mb-0 La integración efectiva de múltiples bibliotecas permite crear flujos de trabajo potentes y flexibles. Por ejemplo, un análisis típico podría comenzar con la carga y limpieza de datos usando Pandas, continuar con transformaciones numéricas mediante NumPy, aplicar análisis estadísticos con Statsmodels, y finalizar con visualizaciones interactivas usando Plotly.
+        p.mb-3 La optimización del rendimiento en el uso de bibliotecas especializadas requiere un entendimiento profundo de sus características y limitaciones. Esto incluye conocer las estructuras de datos más eficientes para diferentes operaciones, comprender los trade-offs entre memoria y velocidad, y aplicar técnicas de vectorización cuando sea posible.
+    .row.justify-content-center.mb-5
+      .col-lg-5.mb-lg-0.mb-3
+        .tarjeta.p-4(style="background-color: #f3f0ea ")
+          p.mb-0 El desarrollo continuo del ecosistema de bibliotecas introduce regularmente nuevas herramientas y mejoras. Por ejemplo, bibliotecas como Vaex y Dask están redefiniendo el procesamiento de grandes conjuntos de datos, mientras que Pydantic y pandera mejoran la validación y verificación de datos. Mantenerse actualizado con estas evoluciones es esencial para aprovechar las mejoras en eficiencia y funcionalidad.
+      .col-lg-3.col-7.mb-lg-0.mb-3: img(src='@/assets/curso/temas/28.png', alt='')
+      .col-lg-4
+        p.mb-0 La documentación y reproducibilidad del análisis requiere un manejo cuidadoso de las versiones de las bibliotecas utilizadas. Las herramientas de gestión de dependencias como Poetry o Pip-tools facilitan este proceso, lo cual asegura la consistencia entre diferentes entornos y la reproducibilidad de los análisis a largo plazo.
+    .row.justify-content-center.mb-5
+      .col-lg-6
+        .titulo-sexto.color-acento-contenido(data-aos='fade-right')
+          h5 Figura 1.
+          span Categorías de bibliotecas para análisis de datos
+        img(src='@/assets/curso/temas/29.svg', alt=' La Figura 1 se denomina «Categorías de bibliotecas para análisis de datos» y organiza las bibliotecas de análisis de datos en tres áreas funcionales clave. La primera, manipulación y procesamiento fundamental, incluye herramientas esenciales para la limpieza, estructuración y transformación de datos, necesarias para preparar la información de forma consistente y útil en el análisis. La segunda, visualización y exploración, contiene bibliotecas que permiten crear gráficos y representaciones visuales, facilitando el entendimiento y la exploración de patrones dentro de los datos. La tercera área, análisis estadístico y modelado, reúne herramientas que permiten aplicar técnicas estadísticas y modelos predictivos para apoyar la obtención de conclusiones y predicciones')
+        figcaption Fuente: OIT, 2024.
 
 
 
@@ -165,9 +278,12 @@
 </template>
 
 <script>
+import TabsB from '../bootstrap/TabsB.vue'
 export default {
   name: 'Tema1',
-  components: {},
+  components: {
+    TabsB,
+  },
   data: () => ({
     // variables de vue
   }),

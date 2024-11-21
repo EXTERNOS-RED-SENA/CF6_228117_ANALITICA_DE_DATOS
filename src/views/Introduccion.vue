@@ -26,8 +26,8 @@
         p A medida que avancemos en el contenido, descubriremos cómo cada elemento se integra en un flujo de trabajo coherente que potencia la toma de decisiones informada. Desde el uso de bibliotecas especializadas para el análisis exploratorio hasta la creación de #[em dashboards] interactivos y la construcción de narrativas efectivas con datos, cada sección contribuye a desarrollar las competencias necesarias para convertirse en una persona competente en la analítica de datos moderna.
     figure
       .video
-        iframe(width="560" height="315" src="https://www.youtube.com/embed/2L91WMqw96A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
-      figcaption Video. 
+        iframe(width="560" height="315" src="https://www.youtube.com/embed/PydRKJqEEWU?si=lMGTUatwf_mmwvWA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
+      figcaption Video. Exploración, validación y visualización de datos para la toma de decisiones 
 
 
 </template>
