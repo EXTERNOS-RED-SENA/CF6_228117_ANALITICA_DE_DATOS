@@ -24,25 +24,48 @@
     .row.justify-content-center.mb-5
       .col-lg-10
         .titulo-sexto.color-acento-contenido(data-aos='fade-right')
-          h5 Tabla 2.
+          h5 Tabla 3.
           span Principios fundamentales para considerar en la visualización de datos
         .tabla-a.color-acento-botones.mb-5
           table
             caption Fuente: OIT, 2024.
             thead.border-0
               tr.text-white(style="background-color: #3ba935")
-                th 
-                th 
-                th 
-                th 
-                th 
-            tbody
+                th Principio
+                th Definición
+                th Aplicación Práctica
+                th Errores comunes por evitar
+            tbody.text-center
               tr
-                td 
-                td 
-                td 
-                td 
-                td 
+                td Simplicidad
+                td El arte de maximizar la cantidad de información transmitida mientras se minimiza el ruido visual. Enfoque en la esencia del mensaje
+                td Eliminar elementos decorativos innecesarios. Usar el espacio en blanco estratégicamente para guiar la atención
+                td Sobrecarga de elementos visuales, decoraciones excesivas que no aportan información
+              tr
+                td Jerarquía visual
+                td Organización de elementos visuales para guiar la atención del observador en un orden específico y lógico
+                td Usar tamaño, color y posición para destacar información crítica. Establecer niveles claros de importancia
+                td Falta de contraste entre elementos importantes y secundarios, desorganización visual
+              tr
+                td Consistencia
+                td Mantener uniformidad en el diseño, formato y estilo a través de toda la visualización o conjunto de visualizaciones
+                td Utilizar una paleta de colores coherente, mantener formatos consistentes para elementos similares
+                td Mezclar diferentes estilos o convenciones, cambiar formatos sin justificación
+              tr
+                td Proporcionalidad
+                td Representación precisa y honesta de las relaciones numéricas en elementos visuales
+                td Asegurar que las escalas sean apropiadas y que las comparaciones visuales reflejen las diferencias reales
+                td Manipulación de escalas, uso de gráficos truncados que distorsionan la percepción
+              tr
+                td Accesibilidad
+                td Diseño que considera las necesidades de diferentes usuarios
+                td Usar combinaciones de colores que funcionen para daltónicos, incluir etiquetas claras y textos alternativos
+                td Depender solo del color para transmitir información, usar textos demasiado pequeños
+              tr
+                td Contextualización
+                td Proporcionar el contexto necesario para interpretar correctamente la información presentada
+                td Incluir títulos informativos, ejes claramente etiquetados y notas explicativas cuando sea necesario
+                td Presentar datos aislados sin referencia, omitir información clave para la interpretación 
     .row.justify-content-center.mb-5.g-0 
       .col-lg-4.mb-lg-0.mb-3.d-lg-block.d-none: img(src='@/assets/curso/temas/61.png', alt='')
       .col-lg-8
@@ -188,7 +211,7 @@
       .col-lg-4.col-7: img(src='@/assets/curso/temas/74.svg', alt='')
     .tarjeta.p-4.mb-5(style="background-color: #f3f0ea ")
       p.mb-0 La implementación de técnicas de storytelling visual requiere considerar aspectos como el ritmo de la presentación, los puntos de énfasis visual y los momentos de revelación de información clave. La integración efectiva de estos elementos crea una experiencia narrativa que mantiene el interés de la audiencia mientras comunica información compleja de manera accesible. 
-    .row.justify-content-center.mb-5
+  .row.justify-content-center.mb-5
       .col-lg-8
         .titulo-sexto.color-acento-contenido(data-aos='fade-right')
           h5 Figura 2.

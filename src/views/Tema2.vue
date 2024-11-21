@@ -23,18 +23,42 @@
           table
             thead.border-0
               tr.text-white(style="background-color: #3ba935")
-                th 
-                th 
-                th 
-                th 
-                th 
-            tbody
+                th Tipo de variable
+                th Descripción
+                th Medidas estadísticas clave
+                th Visualizaciones principales
+            tbody.text-center
               tr
-                td 
-                td 
-                td 
-                td 
-                td 
+                td Numéricas continuas
+                td Pueden tomar cualquier valor dentro de un rango definido. Representan mediciones precisas que pueden incluir decimales y valores intermedios
+                td Media, mediana, desviación estándar
+                td Histogramas, #[em box plots]
+              tr
+                td Numéricas discretas
+                td Valores numéricos enteros y contables, sin valores intermedios posibles
+                td Moda, media, frecuencias
+                td Diagramas de barras, gráficos de puntos
+              tr
+                td Categóricas nominales
+                td Categorías sin orden inherente que representan grupos o clasificaciones mutuamente excluyentes
+                td Moda, frecuencias relativas
+                td Gráficos de barras, gráficos de sectores
+              tr
+                td Categóricas ordinales
+                td Categorías con orden natural que representan niveles o rangos secuenciales
+                td Mediana, frecuencias acumuladas
+                td Diagramas de barras ordenados
+              tr
+                td Binarias
+                td Solo dos posibles valores mutuamente excluyentes. Representan situaciones dicotómicas o decisiones con solo dos resultados
+                td Proporción, frecuencia relativa
+                td Gráficos de barras, #[em waffle charts]
+
+              tr
+                td Temporales
+                td Mediciones en puntos de tiempo específicos que capturan la evolución o cambio de una variable a lo largo del tiempo
+                td Media móvil, tendencia
+                td Series temporales, #[em line plots]
     .row.justify-content-center.mb-5
       .col-lg-3.col-7.mb-lg-0.mb-3: img(src='@/assets/curso/temas/31.png', alt='')
       .col-lg-9
@@ -297,18 +321,41 @@
             caption Fuente: OIT, 2024.
             thead.border-0
               tr.text-white(style="background-color: #3ba935")
-                th 
-                th 
-                th 
-                th 
-                th 
+                th Método de reducción
+                th Principio fundamental
+                th Ventajas y casos de uso
+                th Consideraciones y limitaciones
             tbody
               tr
-                td 
-                td 
-                td 
-                td 
-                td 
+                td PCA (Análisis de Componentes Principales)
+                td Transforma los datos en componentes ortogonales que maximizan la varianza explicada.
+                td Ideal para compresión de datos con alta correlación, manteniendo la interpretabilidad de los componentes
+                td Limitado a relaciones lineales y sensible a valores atípicos. Puede perder información importante en datos con estructuras no lineales significativas
+              tr
+                td t-SNE (t-Distributed Stochastic Neighbor Embedding)
+                td Preserva la estructura local de los datos mediante la conservación de probabilidades de similitud entre pares de puntos. 
+                td Excelente para análisis exploratorio de alta dimensionalidad, con énfasis la preservación de estructuras locales y clusters
+                td No preserva distancias globales y computacionalmente intensivo para grandes conjuntos de datos.
+              tr
+                td UMAP (Uniform Manifold Approximation and Projection)
+                td Construye una representación topológica de los datos utilizando teoría de conjuntos difusos y geometría diferencial
+                td Proporciona una reducción de dimensionalidad más rápida que t-SNE, preservando estructura local y global
+                td Requiere una selección cuidadosa de parámetros y puede ser menos intuitivo de interpretar
+              tr
+                td LDA (Análisis Discriminante Lineal)
+                td Busca proyecciones que maximicen la separación entre clases mientras minimizan la dispersión dentro de las clases
+                td Particularmente efectivo para problemas de clasificación donde se busca maximizar la separabilidad entre clases
+                td Requiere datos etiquetados y asume distribuciones normales por clase
+              tr
+                td Autoencoder
+                td Red neuronal que aprende una representación comprimida de los datos a través de una arquitectura de cuello de botella
+                td Capaz de capturar patrones no lineales complejos y adaptarse a diversos tipos de datos
+                td Requiere grandes cantidades de datos para el entrenamiento y es computacionalmente intensivo
+              tr
+                td NMF (Factorización de Matrices No Negativas)
+                td Descompone la matriz de datos en dos matrices no negativas, proporcionando una representación aditiva de los datos
+                td Proporciona descomposiciones naturalmente interpretables para datos no negativos. Aplicado a procesamiento de texto y análisis de señales
+                td Aplicable solo a datos no negativos y puede converger a mínimos locales
     p.mb-5(data-aos='fade-right') Las técnicas de reducción de dimensionalidad representan un conjunto fundamental de herramientas en el análisis moderno de datos, que se constituyen como soluciones para uno de los desafíos más significativos en la era del big data: la complejidad dimensional. Como se observa en la tabla anterior, cada técnica aborda este desafío desde una perspectiva única, proporcionando diferentes compromisos entre la preservación de la estructura de los datos, la interpretabilidad y la eficiencia computacional. La evolución de estas técnicas refleja la progresión desde enfoques lineales clásicos como PCA hasta métodos más sofisticados como UMAP y autoencoders, que pueden capturar relaciones no lineales complejas en los datos.
     .row.justify-content-center.mb-5
       .col-lg-9.mb-lg-0.mb-3
