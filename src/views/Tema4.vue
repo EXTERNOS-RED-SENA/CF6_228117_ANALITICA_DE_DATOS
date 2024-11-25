@@ -51,10 +51,11 @@
     .row.justify-content-center.mb-5
       .col-lg-8.mb-lg-0.mb-3
         .p-4(style="background-color: #f3f0ea ")
-          p.mb-0 Las técnicas de validación estadística tradicionales, como las pruebas de hipótesis y los intervalos de confianza, proporcionan un fundamento riguroso para la evaluación de relaciones y patrones en los datos. Sin embargo, estas deben complementarse con métodos modernos de validación cruzada y remuestreo que permiten evaluar la robustez y generalización de los hallazgos. Técnicas como el bootstrapping y la validación cruzada k-fold relucen como herramientas fundamentales para estimar la variabilidad y confiabilidad de los resultados.
+          p.mb-0 La identificación y control de factores confusores requiere especial atención. Estos factores pueden crear relaciones espurias o enmascarar relaciones reales, comprometiendo la validez de las conclusiones. Las técnicas de estratificación, emparejamiento y análisis de sensibilidad proporcionan herramientas valiosas para abordar esta complejidad.
             br
             br
-            |La consideración de sesgos potenciales debe vigilarse en el proceso de validación. Estos pueden originarse en múltiples fuentes, incluyendo el diseño del estudio, la recolección de datos, y los métodos de análisis empleados. El sesgo de selección, el sesgo de supervivencia, y el sesgo de confirmación representan amenazas particulares que deben identificarse y mitigarse activamente durante el proceso de validación.
+            |El proceso iterativo de refinamiento de hipótesis debe guiarse por un balance entre el rigor estadístico y la relevancia práctica. La retroalimentación continua entre los resultados de la validación y la reformulación de hipótesis permite un refinamiento progresivo que fortalece la base evidencial para la toma de decisiones
+
       .col-lg-4.col-7: img(src='@/assets/curso/temas/79.svg', alt='')
     Separador
     #t_4_3.titulo-segundo.color-acento-contenido(data-aos='fade-right')
